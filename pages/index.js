@@ -17,7 +17,7 @@ const Home = () => {
             exit="hidden"
             className="hidden lg:block text-5xl mb-2"
           >
-            I&apos;m looking to expand <br />
+            I&apos;m looking to experience <br />
             my portfolio, <br />
             while I&apos;m on <span className="text-accent">top</span>, <br />
             and while I&apos;m <span className="text-accent">young</span>.

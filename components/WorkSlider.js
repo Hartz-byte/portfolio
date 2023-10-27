@@ -13,6 +13,13 @@ const workSlides = {
     {
       images: [
         {
+          title: 'GY C&C',
+          path: '/p0.png',
+          description: 'Live deployed',
+          url: 'https://gycc.in/',
+          status: 'Live'
+        },
+        {
           title: 'Metaverse Website',
           path: '/p1.png',
           description: 'Explore the future of the World.',
@@ -23,12 +30,6 @@ const workSlides = {
           path: '/p2.png',
           description: 'Login your spotify and play your library.',
           url: 'https://github.com/Hartz-byte/music-player-React',
-        },
-        {
-          title: 'Real Estate Website',
-          path: '/p3.png',
-          description: 'Explore your new house.',
-          url: 'https://hartz-byte.github.io/real-estate-website-React/',
         },
         {
           title: 'Live Weather',
@@ -69,7 +70,7 @@ const workSlides = {
   ],
 };
 
-const WorkSlider = () => {
+const WorkSlider = ({ active }) => {
   return (
     <Swiper
       spaceBetween={10}
@@ -106,6 +107,12 @@ const WorkSlider = () => {
                       {/* title */}
                       <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
                         <div className='items-center gap-x-2 text-[13px] tracking-[0.2em]'>
+
+                          {/* status */}
+                          <div className='absolute bottom-20 left-40 p-1 rounded-xl bg-gradient-to-br from-pink-500 to-orange-400'>
+                            {image.status}
+                          </div>
+
                           {/* part 1 */}
                           <div className='delay-100 text-black'>
                             {image.title}
@@ -128,9 +135,13 @@ const WorkSlider = () => {
               )
             })}
           </div>
+          <div className='absolute end-px pt-1 text-accent'>
+              <h1>Slide me...</h1>
+          </div>
         </SwiperSlide>
       })}
     </Swiper>
+    
   )
 }
 

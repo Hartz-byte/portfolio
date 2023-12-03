@@ -12,12 +12,19 @@ const workSlides = {
   slides: [
     {
       images: [
+        // {
+        //   title: 'GY C&C',
+        //   path: '/p0.png',
+        //   description: 'Live deployed',
+        //   url: 'https://gycc.in/',
+        //   status: 'Live'
+        // },
         {
-          title: 'GY C&C',
-          path: '/p0.png',
-          description: 'Live deployed',
-          url: 'https://gycc.in/',
-          status: 'Live'
+          title: 'React native e-commerse app',
+          path: '/native.jpg',
+          description: 'front-end working e-commerce mobile app',
+          url: 'https://github.com/Hartz-byte/shop-application-native',
+          // status: 'React-Native'
         },
         {
           title: 'Metaverse Website',
@@ -96,7 +103,7 @@ const WorkSlider = ({ active }) => {
                         src={image.path}
                         alt='project images'
                         width={500}
-                        height={300}
+                        height={100}
                       />
 
                       {/* overlay gradient */}
